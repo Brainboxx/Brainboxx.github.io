@@ -11228,9 +11228,7 @@ pre {
 .contact {
   position: relative;
   border-radius: 0.3rem;
-  border: 1px solid 1px;
   box-shadow: 1px 2px 6px rgba(173, 181, 189, 0.5);
-  padding: 0 30px 0 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -11259,7 +11257,8 @@ pre {
       -ms-flex-item-align: center;
           align-self: center;
   margin-left: 30px;
-  min-width: 350px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .contact .contact-infos .item {
@@ -11308,15 +11307,27 @@ pre {
   margin-bottom: 4px;
 }
 
-@media (max-width: 480px) {
-    .contact-infos .item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .contact-infos .item i {
-        margin-bottom: 5px;
-    }
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact .form {
+    border-right: none;
+    padding: 20px 0;
+  }
+
+  .contact .contact-infos {
+    margin-left: 0;
+    min-width: 100%;
+    align-self: stretch;
+  }
+
+  .contact .contact-infos .item {
+    flex-wrap: nowrap;
+  }
 }
 
 
