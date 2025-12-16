@@ -11331,7 +11331,7 @@ pre {
 }
 
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -11339,7 +11339,7 @@ pre {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 20px;
-  }
+  } */
   .contact .form {
     margin: 0 0 20px 0;
     padding: 0;
